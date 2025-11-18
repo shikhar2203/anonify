@@ -22,7 +22,7 @@ const Navbar = () => {
                 session ? (
                     <>
                     <span className="mr-4">Welcome, {user?.username || user?.email}</span>
-                    <Button className="w-full md:w-auto" onClick={() => signOut()} variant='outline'>Sign Out</Button>
+                    <Button className="w-full md:w-auto bg-slate-100 text-black" onClick={() => signOut()} variant='outline'>Sign Out</Button>
                     </>
                 ) : (
                     <Link href="/sign-in">
